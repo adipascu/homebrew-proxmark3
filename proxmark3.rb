@@ -1,17 +1,10 @@
 class Proxmark3 < Formula
   desc "RRG/Iceman Proxmark3 client, CDC flasher and firmware bundle"
   homepage "http://www.proxmark.org/"
-  url "https://github.com/RfidResearchGroup/proxmark3/archive/refs/tags/v4.18341.tar.gz"
   sha256 "f22b0bbebc02dcb6a99ac3ba69f3035afdd6f068fcdb759ca5eac85fee0a77ce"
 
-  head do
-    if ENV.has_key?('HOMEBREW_TRAVIS_COMMIT')
-      url "https://github.com/RfidResearchGroup/proxmark3.git", :branch => "#{ENV['HOMEBREW_TRAVIS_BRANCH']}", :revision => "#{ENV['HOMEBREW_TRAVIS_COMMIT']}"
-    else
-      url "https://github.com/RfidResearchGroup/proxmark3.git"
-    end
-  end
-
+  url "https://github.com/RfidResearchGroup/proxmark3.git", :revision => "e5a1861552713"
+  
   depends_on "readline"
   depends_on "coreutils"
   depends_on "pkg-config" => :build
