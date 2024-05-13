@@ -3,7 +3,7 @@ class Proxmark3 < Formula
   homepage "http://www.proxmark.org/"
   sha256 "f22b0bbebc02dcb6a99ac3ba69f3035afdd6f068fcdb759ca5eac85fee0a77ce"
 
-  url "https://github.com/RfidResearchGroup/proxmark3.git", :revision => "e5a1861552713"
+  url "https://github.com/adipascu/proxmark3.git", :revision => "e5a1861552713"
   
   depends_on "readline"
   depends_on "coreutils"
@@ -13,7 +13,7 @@ class Proxmark3 < Formula
   depends_on "python@3.11" => :build
   depends_on "gd" => :recommended
   depends_on "openssl" => :recommended
-  depends_on "rfidresearchgroup/proxmark3/arm-none-eabi-gcc" => :build
+  depends_on "adipascu/proxmark3/arm-none-eabi-gcc" => :build
 
   option "with-blueshark", "Enable Blueshark (BT Addon) support"
   option 'with-generic', 'Build for generic devices instead of RDV4'
