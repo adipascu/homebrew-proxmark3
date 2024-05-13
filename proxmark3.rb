@@ -3,7 +3,7 @@ class Proxmark3 < Formula
   homepage "http://www.proxmark.org/"
   sha256 "f22b0bbebc02dcb6a99ac3ba69f3035afdd6f068fcdb759ca5eac85fee0a77ce"
 
-  url "https://github.com/adipascu/proxmark3.git", :revision => "e5a1861552713"
+  url "https://github.com/RfidResearchGroup/proxmark3.git", :revision => "e5a1861552713"
   
   depends_on "readline"
   depends_on "coreutils"
